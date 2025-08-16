@@ -40,6 +40,7 @@ export const DummyData = [
         profile_token: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         token: "0987654321",
     },
+    
 ].map((item) => ({
     ...item,
     to: `/${item.token}/dashboard/${encodeURIComponent(
@@ -47,5 +48,7 @@ export const DummyData = [
     )}/${item.profile_token}`,
 }));
 
+export const ProfileDummyData = { name: "suriya", email: "suryadr1111@gmail.com", }
 
-export default { CreateProfileContent, DummyData };
+
+export default { CreateProfileContent, DummyData, ProfileDummyData };
