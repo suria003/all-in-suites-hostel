@@ -2,14 +2,14 @@ import Base from "./Base";
 import PathNotFound from "./Components/PageNotFound";
 
 // APPLICATION
-import Dashboard from "./Dashborad";
+import Dashboard from "./Dashboard";
 
 // SECURITY
-import Register from "./security/Base/Register";
-import Login from "./security/Base/Login";
+import Security from "./security/Base/Security";
+import NewPassword from "./security/Base/Controller/NewPassword";
 
 // VERIFICATION SECURITY
-import VerifySecurity from "./security/Base/VerifySecurity";
+import VerifySecurity from "./security/Base/Controller/VerifySecurity";
 
 export const router = [
     { path: "*", element: PathNotFound },
@@ -18,12 +18,14 @@ export const router = [
 ];
 
 export const security = [
-    { path: "/create_account/:token", element: Register },
-    { path: "/login", element: Login },
+    { path: "/create_account", element: Security },
+    { path: "/login", element: Security },
+    { path: "/forgot/password", element: Security },
+    { path: "/:encrypt_email/:tkn/new_password", element: NewPassword },
 ];
 
 export const verifySecurity = [
-    { path: "/:token/verify/:passcode", element: VerifySecurity },
+    { path: "/:tkn/verify/:passcode", element: VerifySecurity },
 ];
 
 export default { router, security, verifySecurity };
