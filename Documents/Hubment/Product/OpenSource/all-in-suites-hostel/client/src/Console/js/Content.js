@@ -4,13 +4,6 @@ export const CreateProfileContent = [
     { name: 'profile_address', type: 'text', placeholder: 'Address', requireField: true, readOnlyField: false, d: "M446.67-406.67h66.66v-120h120v-66.66h-120v-120h-66.66v120h-120v66.66h120v120ZM480-168q129.33-118 191.33-214.17 62-96.16 62-169.83 0-114.86-73.36-188.1-73.36-73.23-179.97-73.23T300.03-740.1q-73.36 73.24-73.36 188.1 0 73.67 63 169.83Q352.67-286 480-168Zm0 88Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" },
 ];
 
-// export const DummyData = [
-//     { profile_name: "Hotel Sapphire Palace", profile_address: "22 MG Road, Connaught Place, New Delhi, India", active: 0, profile_token: "0987654321", token: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", to: `/${token}/dashboard/${profile_name}/${profile_token}`, },
-//     { profile_name: "Grand Orchid Residency", profile_address: "145 Marine Drive, Churchgate, Mumbai, India", active: 0, profile_token: "0987654321", token: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", to: `/${token}/dashboard/${profile_name}/${profile_token}`, },
-//     { profile_name: "The Royal Fern Suites", profile_address: "78 Anna Salai, T. Nagar, Chennai, India", active: 0, profile_token: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", token: "0987654321", to: `/${token}/dashboard/${profile_name}/${profile_token}`, },
-//     { profile_name: "Palmview Heritage Inn", profile_address: "56 Residency Road, Ashok Nagar, Bengaluru, India", active: 0, profile_token: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", token: "0987654321", to: `/${token}/dashboard/${profile_name}/${profile_token}`, },
-// ];
-
 export const DummyData = [
     {
         profile_name: "Hotel Sapphire Palace",
@@ -48,7 +41,7 @@ export const DummyData = [
     )}/${item.profile_token}`,
 }));
 
-export const ProfileDummyData = { name: "suriya", email: "suryadr1111@gmail.com", }
+export const ProfileDummyData = { name: "suriya", mail: "suryadr1111@gmail.com", }
 
 
 export default { CreateProfileContent, DummyData, ProfileDummyData };
